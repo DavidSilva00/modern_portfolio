@@ -12,7 +12,7 @@
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
-    background: #fff;
+    background: set-text-color($primary-color);
     @include easeOut;
   }
 
@@ -116,7 +116,7 @@
     font-size: 30px;
     text-transform: uppercase;
     padding: 1rem;
-    color: #fff;
+    color:set-text-color($primary-color);
     text-decoration: none;
     @include easeOut;
     &:hover {
@@ -132,28 +132,3 @@
         transition-delay: $x * 0.1s;
     }
 }
-
-// Media Query Mixins
-
-@mixin mediaSm {
-  @media screen and (max-width: 500px) {
-      @content;
-    }
-  }
-  @mixin mediaMd {
-    @media screen and (max-width: 768px) {
-      @content;
-      }
-  }
-  @mixin mediaLg {
-    @media screen and (min-width: 769px) and (max-width: 1170px) {
-      @content;
-    }
-  
-  }
-  
-    @mixin mediaXl {
-    @media screen and (min-width: 1171px) {
-      @content;
-          }
-  }
