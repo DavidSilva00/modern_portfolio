@@ -14,7 +14,7 @@ body {
   line-height: 1.5;
 }
 
-//Headiing
+//Heading
 h1,
 h2,
 h3 {
@@ -158,7 +158,7 @@ main {
   height: 60px;
 }
 ///Contact Page
- .boxes {
+.boxes {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -176,10 +176,11 @@ main {
       padding: 0.5rem 1.5rem;
       background: $secondary-color;
       color: set-text-color($secondary-color);
-      span {
+    
+    span {
         color: set-text-color($secondary-color);
-      }
     }
+   }
   }
 }
 
